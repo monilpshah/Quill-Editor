@@ -29,6 +29,11 @@ export class AppComponent {
     private statusBar: StatusBar
   ) {
     this.initializeApp();
+
+    // TO ADD FUNCTIONALITY OF EMOJI UNCOMMENT BELOW CODE AND COMMENT / FUNCTIONALITY CODE
+
+    
+
     // this.modules = {
     //   'emoji-shortname': true,
     //   'emoji-textarea': true,
