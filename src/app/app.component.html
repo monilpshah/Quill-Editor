@@ -1,3 +1,9 @@
-<ion-app>
+<!-- <ion-app>
   <ion-router-outlet></ion-router-outlet>
-</ion-app>
+</ion-app> -->
+<h1>Quill Editor</h1>
+<quill-editor [styles]="{height: '235px'}" (onFocus)="focus($event)" (onEditorChanged)="changedEditor($event)"
+  (onBlur)="blur($event)" (onEditorCreated)="created($event)" [(ngModel)]="searchTerm" trackChanges="all"
+  [modules]="modules" (onEditorCreated)="addBindingCreated($event)"></quill-editor>
+
+<pre><code>{{ content }}</code></pre>

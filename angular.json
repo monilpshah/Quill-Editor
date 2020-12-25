@@ -37,9 +37,27 @@
               },
               {
                 "input": "src/global.scss"
+              },
+              {
+                "input": "node_modules/quill/dist/quill.core.css"
+              },
+              {
+                "input": "node_modules/quill/dist/quill.bubble.css"
+              },
+              {
+                "input": "node_modules/quill/dist/quill.snow.css"
+              },
+              {
+                "input": "./node_modules/quill-emoji/dist/quill-emoji.css"
+              },
+              {
+                "input": "./node_modules/quill-mention/dist/quill.mention.min.css"
               }
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/quill/dist/quill.min.js",
+              "node_modules/quill-mention/dist/quill.mention.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -128,7 +146,9 @@
               "tsconfig.spec.json",
               "e2e/tsconfig.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         },
         "e2e": {
